@@ -33,30 +33,12 @@
   prerequisites: |
     Открыть страницу магазина https://hexlet-products-store.vercel.app/
   test-data: |
-    beauty, fragrances, furniture, groceries, home-decoration, kitchen-accessories, laptops, mens-shirts, mens-shoes, mens watches, mobile-accessories, motorcycle, skin-care, smartphones, sports-accessories, sunglasses, tablets, tops, vehicle, women-bags, women-dresses, women-jewellery, women-shoes, women-watches
+    Поверить все "Категории" на всех страницах каталога
   steps:
     - Нажать на фильтр "категория"
-    - Нажать на каждую доступную категорию  
-    - Нажать "следующая" страница
-    - Нажать на фильтр "категория" 
-    - Нажать на каждую доступную категорию  
-    - Нажать "следующая" страница
-    - Нажать на фильтр "категория"
-    - Нажать на каждую доступную категорию  
-    - Нажать "следующая" страница
-    - Нажать на фильтр "категория"
-    - Нажать на каждую доступную категорию  
-    - Нажать "следующая" страница
-    - Нажать на фильтр "категория"
-    - Нажать на каждую доступную категорию  
-    - Нажать "следующая" страница
-    - Нажать на фильтр "категория"
-    - Нажать на каждую доступную категорию  
-    - Нажать "следующая" страница
-    - Нажать на фильтр "категория"
-    - Нажать на каждую доступную категорию  
+    - Выбрать любую категорию в фильтре "Категория"
   expected-result: |
-    Фильтр "Категория" работает
+    Фильтр "Категория" работает, выдает товары соответствующей категории 
 
 - summary: |
     Проверка фильтра "Brand" 
@@ -65,23 +47,11 @@
   prerequisites: |
     Открыть страницу магазина https://hexlet-products-store.vercel.app/
   test-data: |
-    Essence, Glamour Beauty, Velvet Touch, Chic Cosmetics, Nail Couture, Calvin Klein, Chanel, Dior, Dolce & Gabbana, Gucci, Annibale Colombo, Furniture Co, Knoll, Bath Trends, Apple, Asus, Huawei, Lenovo, Dell, Fashion Trends, Gigabyte, Classic Wear, Casual Comfort, Urban Chic, Nike, Puma, Off White, Fashion Timepieces, Longines, Rolex, Amazon, Apple, Beats, TechGear, GadgetMaster, SnapTech, ProVision, Generic Motors, Kawasaki, MotoGP, ScootMaster, SpeedMaster, Attitude, Olay, Vaseline, Oppo, Realme, Samsung, Vivo, Fashion Shades, Fashion Fun, Apple, Samsung, Chrysler, Dodge, Fashionista, Heshe, Prada, Urban Chic, Elegance Collection, Comfort Trends, Calvin Klein, Fashion Diva, Pampi, Fashion Express, IWC, Rolex, Fashion Gold
+    Проверить все "Brand" на всех страницах каталога
   steps:
-    - Нажать на один из доступных "brand" (сделать для каждого на странице)
-    - Нажать "следующая" страница
-    - Нажать на один из доступных "brand" (сделать для каждого на странице)
-    - Нажать "следующая" страница
-    - Нажать на один из доступных "brand" (сделать для каждого на странице)
-    - Нажать "следующая" страница
-    - Нажать на один из доступных "brand" (сделать для каждого на странице)
-    - Нажать "следующая" страница
-    - Нажать на один из доступных "brand" (сделать для каждого на странице)
-    - Нажать "следующая" страница
-    - Нажать на один из доступных "brand" (сделать для каждого на странице)
-    - Нажать "следующая" страница
-    - Нажать на один из доступных "brand" (сделать для каждого на странице)
+    - Нажать на один из доступных "brand" 
   expected-result: |
-    Фильтр "Brand" работает
+    Фильтр "Brand" работает, выдает соответствующие товары
 
 - summary: |
     Проверка фильтра "в наличии" с галочкой в чек боксе
@@ -90,14 +60,9 @@
   prerequisites: |
     Открыть страницу магазина https://hexlet-products-store.vercel.app/
   test-data: |
-    нет 
+    Проверить все страницы каталога
   steps:
-    - Нажать следующая страница
-    - Нажать следующая страница
-    - Нажать следующая страница
-    - Нажать следующая страница
-    - Нажать следующая страница
-    - Нажать следующая страница
+    - Открыть каталог
   expected-result: |
     Отображаются только товары "в наличии"
 
@@ -108,15 +73,10 @@
   prerequisites: |
    Открыть страницу магазина https://hexlet-products-store.vercel.app/
   test-data: |
-   нет 
+   Проверить все страницы каталога
   steps:
+    - Открыть каталог
     - Нажать на чек бокс "в наличии"
-    - Нажать следующая страница
-    - Нажать следующая страница
-    - Нажать следующая страница
-    - Нажать следующая страница
-    - Нажать следующая страница
-    - Нажать следующая страница
   expected-result: |
    Отображаются только те товары которых нет в наличии
 
@@ -127,7 +87,7 @@
   prerequisites: |
     Открыть страницу магазина https://hexlet-products-store.vercel.app/
   test-data: |
-    нет 
+    ПРоверить фильтр "Цена" на всех страницах каталога
   steps:
     - Написать в "от" цену меньше чем в "до"
     - Написать в "до" цену больше чем в "от"
@@ -141,7 +101,7 @@
   prerequisites: |
     Открыть страницу магазина https://hexlet-products-store.vercel.app/
   test-data: |
-    нет 
+    Проверить на всех страницах каталога
   steps:
     - Применить несколько фильтров (категория, производитель, в наличии, цена, поиск)
   expected-result: |
@@ -154,7 +114,7 @@
   prerequisites: |
      Открыть страницу магазина https://hexlet-products-store.vercel.app/
   test-data: |
-    нет 
+    Проверить на всех страницах каталога
   steps:
     - Написать в фильтре цены "от" значение больше чем в "до"
     - Написать в фильтре цены "до" значение меньше чем в "от"
