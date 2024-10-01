@@ -201,7 +201,7 @@
   expected-result: |
     В консоли Devtools нет ошибок
   actual-result: |
-    В консоли Devtools есть 1 ошибка в запросе при оформлении заказа. Ошибка - "failed"
+    В консоли Devtools есть 1 ошибка в запросе при оформлении заказа - {"status":500,"title":"failed","type":"about:blank","detail":"failed","message":"failed"} Статус код 500 Internal Server Error
 
 - summary: |
      Хештег на странице товара не работает
